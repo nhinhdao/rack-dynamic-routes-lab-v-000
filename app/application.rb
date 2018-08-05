@@ -1,4 +1,4 @@
-class application
+class Application
 
     @@items = [Item.new("Macbook", 1200), Item.new("Bose", 350)]
 
