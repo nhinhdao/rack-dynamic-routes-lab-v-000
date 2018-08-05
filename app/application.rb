@@ -2,7 +2,7 @@ class Application
 
     @@items = [Item.new("Macbook", 1200), Item.new("Bose", 350)]
 
-    resp = Rack::Respond.new
+    resp = Rack::Response.new
     req = Rack::Require.new
 
     if req.path.match(/items/)
