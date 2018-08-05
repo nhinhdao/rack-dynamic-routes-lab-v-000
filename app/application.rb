@@ -3,7 +3,7 @@ class Application
     @@items = [Item.new("Macbook", 1200), Item.new("Bose", 350)]
 
     resp = Rack::Response.new
-    req = Rack::Require.new
+    req = Rack::Request.new
 
     if req.path.match(/items/)
         item_name = req.path.split("items").last
